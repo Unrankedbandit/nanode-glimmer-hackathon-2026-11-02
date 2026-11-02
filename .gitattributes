@@ -1,0 +1,2 @@
+# Preserve exact artifact bytes so SHA-256 manifests match on every platform.
+* -text

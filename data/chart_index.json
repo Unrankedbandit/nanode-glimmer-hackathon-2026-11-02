@@ -1,0 +1,50 @@
+[
+  {
+    "id": "01_results_dashboard",
+    "png": "charts/01_results_dashboard.png",
+    "svg": "charts/01_results_dashboard.svg",
+    "caption": "Formatting 61%→95%, expected-tool agreement 41%→93%; exact-action gain remains uncertain."
+  },
+  {
+    "id": "02_latency_distribution",
+    "png": "charts/02_latency_distribution.png",
+    "svg": "charts/02_latency_distribution.svg",
+    "caption": "Empirical distribution; lower output counts confound any claim of intrinsic model speed."
+  },
+  {
+    "id": "03_stage_pass_rates",
+    "png": "charts/03_stage_pass_rates.png",
+    "svg": "charts/03_stage_pass_rates.svg",
+    "caption": "Stage denominators are per arm; stages contain 3–24 paired cases and are not independent experiments."
+  },
+  {
+    "id": "04_tokens_vs_latency",
+    "png": "charts/04_tokens_vs_latency.png",
+    "svg": "charts/04_tokens_vs_latency.svg",
+    "caption": "All cases shown; neither TTFT nor decode throughput was measured."
+  },
+  {
+    "id": "05_training_loss",
+    "png": "charts/05_training_loss.png",
+    "svg": "charts/05_training_loss.svg",
+    "caption": "Target-token-normalized provider loss per batch; batch composition varies, so this is not an evaluation curve."
+  },
+  {
+    "id": "06_dataset_splits",
+    "png": "charts/06_dataset_splits.png",
+    "svg": "charts/06_dataset_splits.svg",
+    "caption": "597/50/100 examples and 28/6/12 families; final test remained sealed until the checkpoint and harness were fixed."
+  },
+  {
+    "id": "07_missing_mesh_gallery",
+    "png": "charts/07_missing_mesh_gallery.png",
+    "svg": "charts/07_missing_mesh_gallery.svg",
+    "caption": "No first/fifth mesh comparison exists. Panels deliberately preserve missing outputs; no generated or control image stands in."
+  },
+  {
+    "id": "08_semantic_rubric",
+    "png": "charts/08_semantic_rubric.png",
+    "svg": "charts/08_semantic_rubric.svg",
+    "caption": "The physical/export gate and six-item semantic rubric are separate; all semantic scores remain unassessed."
+  }
+]

@@ -1,0 +1,15 @@
+stage,arm,cases,format_valid_count,expected_tool_match_count,exact_teacher_action_count
+Planning,base,3,2,2,0
+Planning,tuned,3,3,3,0
+Inspection,base,24,19,5,0
+Inspection,tuned,24,24,24,3
+Modeling,base,13,8,6,1
+Modeling,tuned,13,13,11,1
+Repair,base,8,6,6,0
+Repair,tuned,8,8,8,0
+Validation,base,24,4,4,0
+Validation,tuned,24,23,23,0
+Export,base,13,11,9,0
+Export,tuned,13,12,12,0
+Render / bake,base,15,11,9,0
+Render / bake,tuned,15,12,12,0

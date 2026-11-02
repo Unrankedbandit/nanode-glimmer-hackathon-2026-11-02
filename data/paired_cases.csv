@@ -1,0 +1,201 @@
+case_id,family_id,arm,stage,format_valid,expected_tool_match,arguments_exact,exact_teacher_action,response_clean,request_failed,input_tokens,output_tokens,client_latency_s
+case001,F01,base,Validation,False,False,False,False,True,False,4588,80,1.6241394690005109
+case001,F01,tuned,Validation,True,True,False,False,True,False,4588,49,1.0504610680509359
+case002,F02,base,Validation,False,False,False,False,True,False,1768,157,2.5209888119716197
+case002,F02,tuned,Validation,True,True,False,False,True,False,1768,39,1.1259676099871285
+case003,F03,base,Validation,False,False,False,False,True,False,3431,75,1.9547373109962791
+case003,F03,tuned,Validation,True,True,False,False,True,False,3431,37,1.0612933059455827
+case004,F04,base,Validation,False,False,False,False,True,False,3672,93,2.0193674989859574
+case004,F04,tuned,Validation,True,True,False,False,True,False,3672,49,1.1785978580010124
+case005,F06,base,Validation,False,False,False,False,True,False,4096,78,2.4284500870271586
+case005,F06,tuned,Validation,True,True,False,False,True,False,4096,50,1.7667303279740736
+case006,F07,base,Validation,False,False,False,False,True,False,4248,113,1.6870937690255232
+case006,F07,tuned,Validation,True,True,False,False,True,False,4248,80,2.1217057169997133
+case007,F09,base,Validation,False,False,False,False,True,False,3616,90,2.8794207769678906
+case007,F09,tuned,Validation,True,True,False,False,True,False,3616,54,1.4164106560056098
+case008,F10,base,Validation,True,True,False,False,True,False,6716,156,3.9701938100042753
+case008,F10,tuned,Validation,True,True,False,False,True,False,6716,52,2.406776262971107
+case009,F11,base,Validation,False,False,False,False,True,False,12951,546,6.975818299048115
+case009,F11,tuned,Validation,True,True,False,False,True,False,12951,103,3.6031130100018345
+case010,F01,base,Export,True,True,False,False,True,False,4858,110,2.361084856034722
+case010,F01,tuned,Export,True,True,False,False,True,False,4858,52,1.0458491849713027
+case011,F02,base,Export,True,True,False,False,True,False,4911,143,3.441690183011815
+case011,F02,tuned,Export,True,True,False,False,True,False,4911,58,1.1938917649677023
+case012,F03,base,Export,True,False,False,False,True,False,10069,189,4.286275513004512
+case012,F03,tuned,Export,True,True,False,False,True,False,10069,25,2.225129370985087
+case013,F09,base,Export,True,True,False,False,True,False,32821,313,4.305281843000557
+case013,F09,tuned,Export,True,True,False,False,True,False,32821,82,4.220029660966247
+case014,F10,base,Export,False,False,False,False,False,False,38594,1024,16.64792567701079
+case014,F10,tuned,Export,True,True,False,False,True,False,38594,35,1.2273987820371985
+case015,F11,base,Export,True,True,False,False,True,False,10121,116,4.046363951987587
+case015,F11,tuned,Export,True,True,False,False,True,False,10121,135,3.0732811859925278
+case016,F02,base,Modeling,True,True,True,True,True,False,3837,103,2.8608068249886855
+case016,F02,tuned,Modeling,True,False,False,False,True,False,3837,36,1.6635880899848416
+case017,F03,base,Modeling,True,True,False,False,True,False,23680,283,9.787837053998373
+case017,F03,tuned,Modeling,True,True,False,False,True,False,23680,55,4.8193771169753745
+case018,F04,base,Modeling,False,False,False,False,True,False,17946,179,2.7870042650029063
+case018,F04,tuned,Modeling,True,True,False,False,True,False,17946,123,4.827009327011183
+case019,F06,base,Modeling,True,True,False,False,True,False,13901,290,5.152126863016747
+case019,F06,tuned,Modeling,True,True,False,False,True,False,13901,77,2.3510569669888355
+case020,F07,base,Modeling,True,False,False,False,True,False,11853,166,2.7008964350097813
+case020,F07,tuned,Modeling,True,True,False,False,True,False,11853,111,1.945526446972508
+case021,F10,base,Modeling,False,False,False,False,True,False,7368,122,2.6847634419682436
+case021,F10,tuned,Modeling,True,True,True,True,True,False,7368,33,1.601061443972867
+case022,F06,base,Planning,True,True,False,False,True,False,8285,123,4.19350040901918
+case022,F06,tuned,Planning,True,True,False,False,True,False,8285,50,4.837099894008134
+case023,F10,base,Planning,False,False,False,False,True,False,10246,329,8.676910400041379
+case023,F10,tuned,Planning,True,True,False,False,True,False,10246,32,2.016308640013449
+case024,F03,base,Render / bake,True,False,False,False,True,False,11079,74,1.7560958149842918
+case024,F03,tuned,Render / bake,True,True,False,False,True,False,11079,74,4.311444206978194
+case025,F04,base,Render / bake,True,True,False,False,True,False,15305,158,6.7438327870331705
+case025,F04,tuned,Render / bake,True,True,False,False,True,False,15305,92,1.9330868299584836
+case026,F06,base,Render / bake,False,False,False,False,True,False,15848,393,11.856054680014495
+case026,F06,tuned,Render / bake,True,True,False,False,True,False,15848,119,3.745411011041142
+case027,F07,base,Render / bake,True,True,False,False,True,False,33119,269,12.612107157998253
+case027,F07,tuned,Render / bake,False,False,False,False,False,False,33119,1024,8.438195645983797
+case028,F09,base,Render / bake,True,True,False,False,True,False,43394,307,9.553856798040215
+case028,F09,tuned,Render / bake,True,True,False,False,True,False,43394,35,6.08811966603389
+case029,F10,base,Render / bake,False,False,False,False,True,False,13623,248,5.256532653991599
+case029,F10,tuned,Render / bake,True,True,False,False,True,False,13623,105,1.8304824359947816
+case030,F11,base,Render / bake,True,True,False,False,True,False,24835,260,5.915214843989816
+case030,F11,tuned,Render / bake,True,True,False,False,True,False,24835,214,4.523094721022062
+case031,F01,base,Repair,True,True,False,False,True,False,11319,102,3.04369769297773
+case031,F01,tuned,Repair,True,True,False,False,True,False,11319,61,2.7458969380240887
+case032,F02,base,Repair,False,False,False,False,False,False,24680,1024,15.838615146989468
+case032,F02,tuned,Repair,True,True,False,False,True,False,24680,63,4.64916525001172
+case033,F10,base,Repair,True,True,False,False,True,False,35493,679,9.874839265015908
+case033,F10,tuned,Repair,True,True,False,False,True,False,35493,68,4.123407086997759
+case034,F11,base,Repair,True,True,False,False,True,False,20057,138,4.805481681018136
+case034,F11,tuned,Repair,True,True,False,False,True,False,20057,109,3.7117144630174153
+case035,F01,base,Inspection,False,False,False,False,True,False,259,119,1.9162145309965126
+case035,F01,tuned,Inspection,True,True,False,False,True,False,259,40,1.4430948320077732
+case036,F02,base,Inspection,True,False,False,False,True,False,229,72,1.6525271569844335
+case036,F02,tuned,Inspection,True,True,False,False,True,False,229,40,0.8827505600056611
+case037,F03,base,Inspection,True,True,False,False,True,False,431,96,3.2242261780193076
+case037,F03,tuned,Inspection,True,True,False,False,True,False,431,40,1.1834963470464572
+case038,F04,base,Inspection,True,False,False,False,True,False,265,73,0.981047288980335
+case038,F04,tuned,Inspection,True,True,False,False,True,False,265,40,1.1596523839980364
+case039,F05,base,Inspection,False,False,False,False,True,False,302,65,1.1246143140015192
+case039,F05,tuned,Inspection,True,True,False,False,True,False,302,40,1.0523435499635525
+case040,F06,base,Inspection,True,False,False,False,True,False,820,46,3.7160200340440497
+case040,F06,tuned,Inspection,True,True,False,False,True,False,820,40,2.174641757970676
+case041,F07,base,Inspection,True,False,False,False,True,False,288,95,1.0931748510338366
+case041,F07,tuned,Inspection,True,True,False,False,True,False,288,40,1.2703689620248042
+case042,F08,base,Inspection,True,False,False,False,True,False,329,113,1.2822458880254999
+case042,F08,tuned,Inspection,True,True,True,True,True,False,329,40,2.293373434979003
+case043,F09,base,Inspection,True,False,False,False,True,False,230,73,1.491912968980614
+case043,F09,tuned,Inspection,True,True,True,True,True,False,230,40,1.5211265569669195
+case044,F10,base,Inspection,True,True,False,False,True,False,225,85,1.089112683024723
+case044,F10,tuned,Inspection,True,True,True,True,True,False,225,40,0.8985835820203647
+case045,F11,base,Inspection,False,False,False,False,True,False,224,74,1.0026656680274755
+case045,F11,tuned,Inspection,True,True,False,False,True,False,224,40,0.8855906020035036
+case046,F12,base,Inspection,True,False,False,False,True,False,454,110,1.8829541130107827
+case046,F12,tuned,Inspection,True,True,False,False,True,False,454,40,1.6692299030255526
+case047,F02,base,Validation,False,False,False,False,False,False,11151,1024,21.637910614954308
+case047,F02,tuned,Validation,True,True,False,False,True,False,11151,61,2.2562587540014647
+case048,F03,base,Validation,False,False,False,False,True,False,3457,70,1.3422622790094465
+case048,F03,tuned,Validation,True,True,False,False,True,False,3457,37,0.8697421319666319
+case049,F04,base,Validation,False,False,False,False,True,False,6286,187,4.665137507021427
+case049,F04,tuned,Validation,True,True,False,False,True,False,6286,71,2.265871783019975
+case050,F06,base,Validation,False,False,False,False,True,False,5488,144,2.270198494021315
+case050,F06,tuned,Validation,True,True,False,False,True,False,5488,41,1.0856185659649782
+case051,F07,base,Validation,False,False,False,False,True,False,4376,134,3.589674463029951
+case051,F07,tuned,Validation,True,True,False,False,True,False,4376,48,3.813598276989069
+case052,F09,base,Validation,False,False,False,False,False,False,29488,1024,24.931486220972147
+case052,F09,tuned,Validation,True,True,False,False,True,False,29488,80,4.406192975002341
+case053,F10,base,Validation,False,False,False,False,False,False,32852,1024,13.373309101036284
+case053,F10,tuned,Validation,True,True,False,False,True,False,32852,89,5.651247847999912
+case054,F11,base,Validation,True,True,False,False,True,False,20296,658,9.32391519396333
+case054,F11,tuned,Validation,True,True,False,False,True,False,20296,80,3.8940364199806936
+case055,F01,base,Export,True,True,False,False,True,False,6530,101,5.144568482995965
+case055,F01,tuned,Export,True,True,False,False,True,False,6530,47,1.1099515489768237
+case056,F02,base,Export,True,True,False,False,True,False,8188,152,3.5138430829974823
+case056,F02,tuned,Export,True,True,False,False,True,False,8188,83,2.6263957180199213
+case057,F03,base,Export,True,True,False,False,True,False,10757,202,3.5164337319438346
+case057,F03,tuned,Export,True,True,False,False,True,False,10757,155,2.480417695012875
+case058,F10,base,Export,True,True,False,False,True,False,41600,447,13.847476834023837
+case058,F10,tuned,Export,False,False,False,False,False,False,41600,1024,9.892706858052406
+case059,F02,base,Modeling,True,True,False,False,True,False,10884,178,3.919352944009006
+case059,F02,tuned,Modeling,True,True,False,False,True,False,10884,66,2.5087879300117493
+case060,F03,base,Modeling,False,False,False,False,True,False,26972,400,8.506978354009334
+case060,F03,tuned,Modeling,True,True,False,False,True,False,26972,49,3.367657165043056
+case061,F07,base,Modeling,False,False,False,False,True,False,13275,241,5.796659764018841
+case061,F07,tuned,Modeling,True,True,False,False,True,False,13275,38,2.845824801013805
+case062,F10,base,Modeling,False,False,False,False,True,False,12248,319,4.99350078596035
+case062,F10,tuned,Modeling,True,True,False,False,True,False,12248,32,1.920591116999276
+case063,F06,base,Planning,True,True,False,False,True,False,8486,110,5.25757934601279
+case063,F06,tuned,Planning,True,True,False,False,True,False,8486,64,1.849415326025337
+case064,F03,base,Render / bake,True,False,False,False,True,False,13873,104,3.6884392520296387
+case064,F03,tuned,Render / bake,True,True,False,False,True,False,13873,78,1.9501064900541678
+case065,F06,base,Render / bake,True,True,False,False,True,False,31105,367,7.901308410044294
+case065,F06,tuned,Render / bake,True,True,False,False,True,False,31105,582,8.120375333994161
+case066,F10,base,Render / bake,False,False,False,False,False,False,35709,1024,15.298850928025786
+case066,F10,tuned,Render / bake,True,True,False,False,True,False,35709,48,6.194729530019686
+case067,F11,base,Render / bake,True,True,False,False,True,False,25885,182,6.6471391880186275
+case067,F11,tuned,Render / bake,True,True,False,False,True,False,25885,458,5.181896288995631
+case068,F02,base,Repair,True,True,False,False,True,False,35280,129,2.5638989490107633
+case068,F02,tuned,Repair,True,True,False,False,True,False,35280,557,12.674332520982716
+case069,F11,base,Repair,True,True,False,False,True,False,24505,549,10.821640771988314
+case069,F11,tuned,Repair,True,True,False,False,True,False,24505,331,9.222884023038205
+case070,F02,base,Inspection,True,False,False,False,True,False,242,74,1.0592613609624095
+case070,F02,tuned,Inspection,True,True,False,False,True,False,242,40,1.3619287650217302
+case071,F03,base,Inspection,True,False,False,False,True,False,553,142,1.8686919700121507
+case071,F03,tuned,Inspection,True,True,False,False,True,False,553,40,1.249135945981834
+case072,F04,base,Inspection,False,False,False,False,True,False,447,99,3.208534304983914
+case072,F04,tuned,Inspection,True,True,False,False,True,False,447,40,0.8784931299742311
+case073,F05,base,Inspection,False,False,False,False,True,False,420,97,1.5481614219606854
+case073,F05,tuned,Inspection,True,True,False,False,True,False,420,40,1.3576459070318379
+case074,F06,base,Inspection,True,False,False,False,True,False,950,54,1.9153754850267433
+case074,F06,tuned,Inspection,True,True,False,False,True,False,950,40,0.9033492190064862
+case075,F07,base,Inspection,True,True,False,False,True,False,439,139,1.8503213899675757
+case075,F07,tuned,Inspection,True,True,False,False,True,False,439,40,3.893301251984667
+case076,F08,base,Inspection,True,True,False,False,True,False,3030,76,1.5540455159498379
+case076,F08,tuned,Inspection,True,True,False,False,True,False,3030,954,12.293729445023928
+case077,F09,base,Inspection,True,False,False,False,True,False,363,116,1.2317213360220194
+case077,F09,tuned,Inspection,True,True,False,False,True,False,363,40,0.9915457519819029
+case078,F10,base,Inspection,True,False,False,False,True,False,362,128,2.092730903008487
+case078,F10,tuned,Inspection,True,True,False,False,True,False,362,40,0.9124677070067264
+case079,F11,base,Inspection,True,True,False,False,True,False,7496,105,3.3134544750209898
+case079,F11,tuned,Inspection,True,True,False,False,True,False,7496,79,2.7877479199669324
+case080,F12,base,Inspection,True,False,False,False,True,False,3462,66,2.835644864011556
+case080,F12,tuned,Inspection,True,True,False,False,True,False,3462,39,1.8855698099941947
+case081,F02,base,Validation,False,False,False,False,False,False,19910,1024,20.511493299971335
+case081,F02,tuned,Validation,True,True,False,False,True,False,19910,55,3.304982856963761
+case082,F03,base,Validation,False,False,False,False,True,False,4373,83,2.387996845995076
+case082,F03,tuned,Validation,True,True,False,False,True,False,4373,49,2.004631593998056
+case083,F06,base,Validation,False,False,False,False,True,False,6046,90,2.382210245996248
+case083,F06,tuned,Validation,True,True,False,False,True,False,6046,50,2.2866890870500356
+case084,F07,base,Validation,True,True,False,False,True,False,19372,342,6.76012479205383
+case084,F07,tuned,Validation,True,True,False,False,True,False,19372,226,4.503083349962253
+case085,F09,base,Validation,False,False,False,False,False,False,37973,1024,12.741394486045465
+case085,F09,tuned,Validation,True,True,False,False,True,False,37973,72,6.460097611998208
+case086,F10,base,Validation,False,False,False,False,True,False,38843,619,5.723024892969988
+case086,F10,tuned,Validation,False,False,False,False,False,False,38843,1024,8.769495262007695
+case087,F11,base,Validation,True,True,False,False,True,False,20857,480,10.902837258006912
+case087,F11,tuned,Validation,True,True,False,False,True,False,20857,92,3.4129740500357
+case088,F01,base,Export,True,False,False,False,True,False,11637,129,3.376943241979461
+case088,F01,tuned,Export,True,True,False,False,True,False,11637,50,1.0737552660284564
+case089,F02,base,Export,False,False,False,False,False,False,8649,1024,19.64408913702937
+case089,F02,tuned,Export,True,True,False,False,True,False,8649,50,2.1536544999689795
+case090,F03,base,Export,True,True,False,False,True,False,17322,112,5.022384267998859
+case090,F03,tuned,Export,True,True,False,False,True,False,17322,73,3.811922398977913
+case091,F02,base,Modeling,True,False,False,False,True,False,21550,324,7.275301063025836
+case091,F02,tuned,Modeling,True,False,False,False,True,False,21550,60,3.8504065240267664
+case092,F07,base,Modeling,True,True,False,False,True,False,36969,309,7.167098207981326
+case092,F07,tuned,Modeling,True,True,False,False,True,False,36969,129,3.9324089940055273
+case093,F10,base,Modeling,True,True,False,False,True,False,14916,339,7.970256163040176
+case093,F10,tuned,Modeling,True,True,False,False,True,False,14916,92,2.6786391110508703
+case094,F03,base,Render / bake,False,False,False,False,True,False,18699,708,19.334009311976843
+case094,F03,tuned,Render / bake,True,True,False,False,True,False,18699,210,3.7226102820131928
+case095,F06,base,Render / bake,True,True,False,False,True,False,32438,400,9.188489236985333
+case095,F06,tuned,Render / bake,False,False,False,False,False,False,32438,1024,5.10029954102356
+case096,F10,base,Render / bake,True,True,False,False,True,False,37126,667,13.078321739041712
+case096,F10,tuned,Render / bake,False,False,False,False,False,False,37126,1024,18.790357546007726
+case097,F11,base,Render / bake,True,True,False,False,True,False,26150,154,2.6011317030061036
+case097,F11,tuned,Render / bake,True,True,False,False,True,False,26150,612,12.040780190029182
+case098,F02,base,Repair,False,False,False,False,True,False,35462,278,4.645007729995996
+case098,F02,tuned,Repair,True,True,False,False,True,False,35462,160,3.7704241879982874
+case099,F11,base,Repair,True,True,False,False,True,False,25408,539,6.107341966009699
+case099,F11,tuned,Repair,True,True,False,False,True,False,25408,272,4.561936838028487
+case100,F02,base,Inspection,True,False,False,False,True,False,327,142,2.424833387020044
+case100,F02,tuned,Inspection,True,True,False,False,True,False,327,40,1.3853740990161896

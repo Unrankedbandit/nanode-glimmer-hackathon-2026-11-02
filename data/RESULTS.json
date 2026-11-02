@@ -1,0 +1,214 @@
+{
+  "title": "Nanode: base to better, with visible limits",
+  "date": "2026-11-02",
+  "model": {
+    "name": "Muse Glimmer 30B",
+    "adaptation": "Supervised fine-tuning with LoRA",
+    "rank": 8,
+    "alpha": 32,
+    "epochs": 1,
+    "learning_rate": 0.0001,
+    "batch_size": 16
+  },
+  "dataset": {
+    "unit": "Observed next action, not an independent finished mesh",
+    "splits": [
+      {
+        "split": "Train",
+        "examples": 597,
+        "families": 28
+      },
+      {
+        "split": "Validation",
+        "examples": 50,
+        "families": 6
+      },
+      {
+        "split": "Held-out test",
+        "examples": 100,
+        "families": 12
+      }
+    ],
+    "partitioning": "Asset-family-disjoint train/validation/test",
+    "context_policy": "Complete observed context; no truncation or hidden reasoning targets",
+    "validation_examples_evaluated": 16,
+    "validation_total_examples": 50
+  },
+  "training": {
+    "completed_steps": 38,
+    "completed_examples": 597,
+    "wall_time_s": 897.749,
+    "wall_time_includes": "Controller, checkpoint and promotion; excludes earlier preparation",
+    "training_tokens": 10616154,
+    "assistant_loss_tokens": 113373,
+    "loss_scope": "Per-training-batch token-normalized loss; not held-out loss"
+  },
+  "test": {
+    "paired_cases": 100,
+    "families": 12,
+    "temperature": 0,
+    "concurrency": 4,
+    "arms": {
+      "base": {
+        "assigned_cases": 100,
+        "failed_calls": 0,
+        "action_format_pass_rate": 0.61,
+        "tool_name_match_rate": 0.41,
+        "exact_teacher_action_rate": 0.01,
+        "client_latency_p50_s": 3.817686489026528,
+        "client_latency_p95_s": 19.334009311976843,
+        "completed_call_input_tokens": 1366866,
+        "completed_call_output_tokens": 28204,
+        "completed_call_cost_at_uncached_list_rate_usd": 2.8166928799999997
+      },
+      "tuned": {
+        "assigned_cases": 100,
+        "failed_calls": 0,
+        "action_format_pass_rate": 0.95,
+        "tool_name_match_rate": 0.93,
+        "exact_teacher_action_rate": 0.04,
+        "client_latency_p50_s": 2.322215200983919,
+        "client_latency_p95_s": 9.892706858052406,
+        "completed_call_input_tokens": 1366866,
+        "completed_call_output_tokens": 14736,
+        "completed_call_cost_at_uncached_list_rate_usd": 2.75096904
+      }
+    },
+    "scope": "Offline next-action compliance and teacher-action agreement only",
+    "exact_action_family_equal_weight_delta": {
+      "mean": 0.05912698412698413,
+      "bootstrap95": [
+        -0.005555555555555556,
+        0.15436507936507937
+      ],
+      "identified_families": 12,
+      "label": "Exploratory family-cluster uncertainty; cases within families are correlated"
+    }
+  },
+  "validation": {
+    "arms": {
+      "base": {
+        "assigned_cases": 16,
+        "failed_calls": 0,
+        "action_format_pass_rate": 0.6875,
+        "tool_name_match_rate": 0.5,
+        "exact_teacher_action_rate": 0.0,
+        "client_latency_p50_s": 3.4212464729789644,
+        "client_latency_p95_s": 18.419972702045925,
+        "completed_call_input_tokens": 252039,
+        "completed_call_output_tokens": 4239,
+        "completed_call_cost_at_uncached_list_rate_usd": 0.51468276
+      }
+    },
+    "scope": "16 of 50 validation examples; baseline only"
+  },
+  "mesh_attempts": [
+    {
+      "campaign": "initial",
+      "arm": "base",
+      "state": "failed",
+      "failure": "controller_or_adapter_error",
+      "exported_meshes": 0,
+      "recorded_versions": 0,
+      "recorded_tool_actions": 2,
+      "input_tokens": 7112,
+      "output_tokens": 230,
+      "client_model_time_s": 3.7535375599982217,
+      "wall_time_s": 4.049777392996475
+    },
+    {
+      "campaign": "initial",
+      "arm": "tuned",
+      "state": "failed",
+      "failure": "step_limit",
+      "exported_meshes": 0,
+      "recorded_versions": 0,
+      "recorded_tool_actions": 20,
+      "input_tokens": 161555,
+      "output_tokens": 1546,
+      "client_model_time_s": 29.895866264938377,
+      "wall_time_s": 32.16150143905543
+    },
+    {
+      "campaign": "corrected_five_version",
+      "arm": "base",
+      "state": "failed",
+      "failure": "iteration_target_not_met",
+      "exported_meshes": 0,
+      "recorded_versions": 0,
+      "recorded_tool_actions": 30,
+      "input_tokens": 40342,
+      "output_tokens": 1779,
+      "client_model_time_s": 28.194483993167523,
+      "wall_time_s": 30.369607155036647
+    },
+    {
+      "campaign": "corrected_five_version",
+      "arm": "tuned",
+      "state": "failed",
+      "failure": "context_limit",
+      "exported_meshes": 0,
+      "recorded_versions": 0,
+      "recorded_tool_actions": 21,
+      "input_tokens": 620883,
+      "output_tokens": 1864,
+      "client_model_time_s": 36.96207393804798,
+      "wall_time_s": 40.014097548031714
+    }
+  ],
+  "five_version_comparison": {
+    "state": "finished_without_mesh",
+    "base_versions": 0,
+    "tuned_versions": 0,
+    "requested_versions_per_arm": 5,
+    "first_mesh": "MISSING",
+    "fifth_mesh": "MISSING",
+    "visual_mesh_quality_gain_demonstrated": false
+  },
+  "hero_brief": {
+    "asset": "Armored tortoise courier robot",
+    "bounds_m": {
+      "x_width": 0.6,
+      "y_length": 0.9,
+      "z_height": 0.65
+    },
+    "front": "-Y",
+    "ground_z_m": 0,
+    "center_xy_m": [
+      0,
+      0
+    ],
+    "domains": [
+      "Organic form",
+      "Beveled armor",
+      "Exposed machinery",
+      "Raised NANODE 01",
+      "Fabric saddle pouch"
+    ],
+    "semantic_assessment": "UNASSESSED: no exported mesh",
+    "rubric_max": 12
+  },
+  "budget": {
+    "hard_total_usd": 50,
+    "operating_ceiling_usd": 40,
+    "reserve_inside_total_usd": 10,
+    "reserved_upper_bound_usd": 35.64763696,
+    "operating_headroom_usd": 4.35236304,
+    "reservation_label": "Conservative pre-call upper bound for all authorized runs, including failures; not spend",
+    "paired_test_list_rate_estimate_usd": 5.56766192,
+    "actual_invoice_spend_usd": null,
+    "last_reported_billing_snapshot_usd": 0,
+    "billing_snapshot_time": "15:09 PST",
+    "billing_snapshot_caveat": "Subject to reporting delay; not final invoice spend"
+  },
+  "limitations": [
+    "Action compliance is not executable argument accuracy or mesh quality.",
+    "Exact teacher action: 1% to 4%; uncertain family-level gain.",
+    "Lower client latency accompanies fewer output tokens; not intrinsic decode-speed evidence.",
+    "Both initial attempts and both corrected attempts exported zero meshes.",
+    "No first/fifth versions or semantic scores exist; missing panels are deliberate.",
+    "No TTFT, final invoice cost or perceptual mesh-quality improvement is established.",
+    "Identified family groups are split-disjoint; perceptual/source independence has not been certified.",
+    "No prompts, model responses, actions, code, traces, private identifiers or source paths are supplied."
+  ]
+}

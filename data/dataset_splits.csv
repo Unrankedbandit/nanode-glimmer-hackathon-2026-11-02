@@ -1,0 +1,4 @@
+split,examples,families
+Train,597,28
+Validation,50,6
+Held-out test,100,12

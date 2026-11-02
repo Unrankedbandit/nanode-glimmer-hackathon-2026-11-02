@@ -1,0 +1,5 @@
+campaign,arm,state,failure,exported_meshes,recorded_versions,recorded_tool_actions,input_tokens,output_tokens,client_model_time_s,wall_time_s
+initial,base,failed,controller_or_adapter_error,0,0,2,7112,230,3.7535375599982217,4.049777392996475
+initial,tuned,failed,step_limit,0,0,20,161555,1546,29.895866264938377,32.16150143905543
+corrected_five_version,base,failed,iteration_target_not_met,0,0,30,40342,1779,28.194483993167523,30.369607155036647
+corrected_five_version,tuned,failed,context_limit,0,0,21,620883,1864,36.96207393804798,40.014097548031714
