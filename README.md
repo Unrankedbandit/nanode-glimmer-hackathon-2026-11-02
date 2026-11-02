@@ -27,7 +27,7 @@ The test contains 100 paired cases from 12 identified asset families. All 200 re
 - `docs/`: data dictionary, high-level method and composite-asset brief.
 - `SLIDE_OUTLINE.md`: chart-first presentation sequence.
 
-No production code, raw demonstrations, prompts, generated action text, source assets, model weights, credentials, account details or private endpoints are included. No 3D asset is included because none was exported. This is a local handoff repository; it has not been published to a remote service.
+No production code, raw demonstrations, prompts, generated action text, source assets, model weights, credentials, account details or private endpoints are included. No 3D asset is included because none was exported.
 
 The SFT job completed one epoch of rank-8 LoRA on Muse Glimmer 30B, using 597 training examples and a separate 50-example validation partition. Training completed in 14m58s. The final checkpoint was frozen before the held-out comparison. See the data dictionary for exact metric meanings and limitations.
 
