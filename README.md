@@ -2,6 +2,8 @@
 
 Presentation handoff for November 2, 2026. Start with [CLAUDE_HANDOFF.md](CLAUDE_HANDOFF.md).
 
+**Slides:** [Glimmer Findings Slides (PDF)](slides/Glimmer_Findings_Slides.pdf).
+
 **Measured:** better next-action formatting and tool agreement, with lower observed response latency. **Not achieved:** an exported 3D mesh from either model. Every requested first/fifth mesh comparison is missing.
 
 | Held-out metric | Base | LoRA |
